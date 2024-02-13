@@ -1,0 +1,105 @@
+body{
+    background-color: #ffffff;
+    margin: 0;
+    color: hsl(0, 0%, 10%);
+    line-height: 1.5;       
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.navigation-top{
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+.navigation-top-container{
+    float: left;
+    display: block;
+    padding: 8px;  
+}
+.navigation-top a{  
+    position: relative;
+    left: 100px;
+    top: 1px;
+    float: left;
+    display: block;
+    padding: 12px;  
+    text-decoration: none;  
+}
+.navigation-top p{
+    font-size: large;
+    float: left;
+    position: relative;
+    left: 28px;
+}
+.navigation-top a:hover{
+    border-radius: 20px;
+    display: block;
+    padding: 12px;      
+    color: #323232;
+    background-color: #d3dce2
+}
+.navigation-top-hovered{
+    border-radius: 20px;
+    display: block;
+    padding: 12px;  
+    background-color: #171921;
+    color: #f1f1f1;
+}
+.navigation-top-unhovered{
+    border-radius: 20px;
+    display: block;
+    padding: 12px;  
+    background-color: #ffffff;
+    color: #323232;
+}
+.navigation-top-outbox{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px rgba(3, 3, 85, 0.087);
+    padding: 10px;
+    z-index: 2;
+}
+.navigation-top-placeholder{
+    padding: 47px;
+}
+.page-container{
+    position: relative;     
+    left: 5%;
+    width: 90%;
+    border: 0px solid rgb(193, 193, 193);
+    background-color: #f1f4f6;
+}
+.page-container p{
+    position: relative;
+    left: 1%;   
+}
+.problem-table{
+    position: relative;
+    border-collapse:collapse;
+    width: 100%;
+    border-spacing: 0px;
+    border-radius:6px;
+}
+.problem-table td, .problem-table th{
+    border-left:solid black 10px;
+    border-top:solid black 10px;
+    padding: 8px;
+    border: 1px solid #91a2c3;
+    background-color: white;
+}
+.problem-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #91a2c3;
+    color: white;
+}
+.problem-table-corner{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    border: 1px solid #91a2c3;
+    border-radius: 4px;
+}

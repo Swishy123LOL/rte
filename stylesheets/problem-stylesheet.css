@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(101, 122, 140);
+}
+main{
+    box-shadow: 10px 10px rgb(37, 36, 48);
+    padding: 80px;
+    padding-top: 30px;
+    margin: 1em auto;
+    background-color: white;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+main h1, main h2{
+    border-bottom: 1px solid #d3dce2;
+    padding-bottom: 10px;
+}
+main h3{
+    border-bottom: 1px solid #d3dce2;
+}
+main pre{
+    border: 1px solid #d3dce2;
+    border-radius: 2px;
+}
+main pre code{
+    color: rgb(81, 111, 137);
+}
+.main-two{
+    box-shadow: 10px 10px rgb(37, 36, 48);
+    padding: 80px;
+    padding-top: 30px;
+    margin: 1em auto;
+    background-color: white;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.right-panel{
+    position: fixed;
+    right: 23px;
+    width: 343px;
+    height: 800px;
+    top: 110px;
+    box-shadow: 10px 10px rgb(37, 36, 48), -10px -10px rgb(255, 251, 127);
+    border-radius: 10px;
+    background-color: white;
+    z-index: 2;
+}
+.submit-button {
+    position: relative;
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #6fdb7a, #49aba3);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    overflow: hidden;
+    padding: 10px 70px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    left: 60px; 
+    top: 5px;
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+    text-align: center;
+}
+.submit-button:hover {
+    background-image: linear-gradient(-180deg, #49aba3, #367aaa);
+}
+.submit-file-button {
+    position: relative;
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #6fdb7a, #49aba3);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    outline: 0;
+    overflow: hidden;
+    padding: 10px 70px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    left: 35px;
+    bottom: 5px;   
+    z-index: 9;
+    border: 0;
+    transition: box-shadow .2s;
+    text-align: center;
+}
+.submit-file-button:hover {
+    background-image: linear-gradient(-180deg,  #49aba3, #367aaa);
+}
+.right-panel p{
+    position: relative;
+    line-height: 15px;
+}
+.right-panel-section{
+    color: white;
+    background-color: #367aaa;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid rgb(37, 36, 48);
+    position: relative;
+    left: 20px;
+    width: 302px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.right-panel-section-top{
+    color: white;
+    text-align: center;
+    background-color: rgb(37, 36, 48);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid rgb(37, 36, 48);
+    position: relative;
+    left: 20px;
+    width: 302px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

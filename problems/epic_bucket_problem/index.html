@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/json/texme.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Fredoka:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/homepage-stylesheet.css">
+    <link rel="stylesheet" href="/stylesheets/problem-stylesheet.css">
+</head>
+<body>
+    <div class="navigation-top-placeholder"></div>
+    <div class="navigation-top-outbox">
+        <div class="navigation-top">
+            <p>RTE</p>
+            <div class="navigation-top-container"><a href = "/" class="navigation-top-unhovered">Home</a></div>
+            <div class="navigation-top-container"><a href = "/problems" class="navigation-top-hovered">Problems</a></div> 
+            <div class="navigation-top-container"><a href = "/daonlinejudge/submissions/submissions.html" class="navigation-top-unhovered">Submissions</a></div> 
+            <div class="navigation-top-container"><a href = "/daonlinejudge/contests/contests/html" class="navigation-top-unhovered">Contests</a></div> 
+            <div class="navigation-top-container"><a href = "/daonlinejudge/rankings/rankings/html" class="navigation-top-unhovered">Rankings</a></div> 
+            <div class="navigation-top-container"><a href = "/daonlinejudge/custom-test/custom-test/html" class="navigation-top-unhovered">Custom Test</a></div> 
+        </div>
+    </div>
+    <div class="right-panel">
+        <p></p>
+        <div class="right-panel-section-top">
+            <p>Submit</p>
+        </div>
+        <div class="right-panel-section">
+            <button class="submit-button" onclick="window.location.href='/problems/epic_bucket_problem/submit'">Submit!</button>
+            <p style="text-align:center;">or</p>
+            <button class="submit-file-button">Submit with File</button>
+            <p></p>
+            <button class="submit-file-button">My submissions</button>
+            <p></p>
+            <button class="submit-file-button">All submissions</button>
+        </div>
+        <p></p>
+        <div class="right-panel-section-top">
+            <p>Problem Info</p>
+        </div>
+        <div class="right-panel-section">
+            <p style="left: 15px;">&blacklozenge; Points: 300</p>
+            <p style="left: 15px;">&blacklozenge; Time limit: 1.75 seconds</p>
+            <p style="left: 15px;">&blacklozenge; Memory limit: 256 megabytes</p>
+            <p style="left: 15px;">&blacklozenge; Input: Standard</p>
+            <p style="left: 15px;">&blacklozenge; Output: Standard</p>
+        </div>
+    </div>
+    <div class="page-container">
+        <textarea>
+<h1><p style="text-align: center;">Fill the Bucket</p></h1>
+<p style="text-align: center;">Time limit: 1.75 seconds</p>
+<p style="text-align: center;">Memory limit: 256 megabytes</p>
+<h3></h3>
+
+Minh có $N$ cốc nước được đánh số từ $1$ đến $N$. Cốc nước thứ $i$ có thể tích là $a_i$ ml (mililít). Ngoài ra, bằng một cách thần kì nào đó, anh ấy có vô số các thùng nước, mỗi thùng có thể tích là $M$ ml.
+
+Minh muốn chuyển hết nước từ các cốc sang thùng nước, nhưng anh muốn làm được điều này bằng ít thùng nước nhất có thể. Sau một hồi suy nghĩ, Minh nghĩ ra ý tưởng như sau:
+
+Xét một dãy các cốc nước $[b_1, b_2, ..., b_k]$. Đầu tiên, Minh lấy một thùng nước mới. Sau đó, Minh lần lượt đi từ $1$ đến $k$, nếu anh ấy có thể đổ hết nước từ cốc thứ $i$ sang thùng nước mà không bị tràn, thì anh đổ hết nước vào thùng. Nếu không, Minh lấy một thùng nước mới và đổ hết nước vào thùng mới này.
+
+Minh định nghĩa chi phí của dãy $[b_1, b_2, ..., b_k]$ là số thùng nước anh phải lấy để chuyển hết nước bằng công đoạn trên.
+
+Vì lười code và bận ôn thi đại học, nên Minh giao cho bạn công việc sau:
+
+Cho $Q$ truy vấn, mỗi truy vấn gồm hai dạng:
+* $1 \ l \ r$ $(1 \leq l \leq r \leq N)$: Tính chi phí của dãy $[a_l, a_{l + 1}, ..., a_r]$. 
+* $2 \ u \ x$ $(1 \leq u \leq N, 1 \leq x \leq M)$: Gán $a_u = x$.
+
+## Input
+* Dòng đầu tiên nhập vào hai số $N$ và $M$ $(1 \leq N \leq 10^5, 1 \leq M \leq 10^9)$ là độ dài của dãy $a$ và thể tích của thùng nước.
+* Dòng thứ hai nhập vào $N$ số nguyên $a_1, a_2, ... a_N$ $(1 \leq a_i \leq M)$ là thể tích của $N$ cốc nước.
+* Dòng thứ ba nhập vào số $Q$ $(1 \leq Q \leq 10^5)$ là số lượng truy vấn.
+* $Q$ dòng sau, dòng thứ $i + 3$ nhập vào truy vấn được mô tả ở trên. 
+
+## Output
+* Ỉn ra kết quả cho mỗi loại truy vấn $1$ theo thứ tự đầu vào.
+
+## Sample Input
+```
+8 71
+60 46 36 28 25 3 8 54 
+6
+1 1 8
+2 4 47
+2 7 56
+1 6 8
+2 3 1
+1 7 8
+```
+## Sample Output
+```
+5
+2
+2
+```
+
+## Scoring 
+<table class="problem-table">
+<thead>
+<tr>
+<th style="text-align:center;"><strong>Subtask</strong></th>
+<th style="text-align:center;"><strong>Điểm</strong></th>
+<th style="text-align:center;"><strong>Giới hạn</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">$1$</td>
+<td style="text-align:center;">$20 \%$</td>
+<td style="text-align:center;">$N, Q \leq 1000$</td>
+</tr>
+<tr>
+<td style="text-align:center;">$2$</td>
+<td style="text-align:center;">$80 \%$</td>
+<td style="text-align:center;">Không ràng buộc gì thêm</td>
+</tr>
+</tbody>
+</table>
+        </textarea>
+    </div>
+</body>
+</html>
